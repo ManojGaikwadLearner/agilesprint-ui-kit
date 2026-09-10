@@ -12,7 +12,7 @@ import { NgOptimizedImage } from '@angular/common';
         <img [ngSrc]="src()!" [alt]="alt()" [width]="size()" [height]="size()" class="object-cover" />
       } @else {
         <div class="w-full h-full bg-slate-700 text-white flex items-center justify-center font-bold text-xs">
-          {{ fallbackInitials() }}
+          {{ fallbackInitials }}
         </div>
       }
     </div>
