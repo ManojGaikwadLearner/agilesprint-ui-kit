@@ -7,16 +7,16 @@
       "projectType": "library",
       "root": "projects/ui-kit",
       "sourceRoot": "projects/ui-kit/src",
-      "prefix": "agile",
+      "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "builder": "@angular/build:ng-packagr",
           "options": {
             "project": "projects/ui-kit/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ui-kit/tsconfig.lib.json"
+              "tsConfig": "projects/ui-kit/tsconfig.lib.prod.json"
             },
             "development": {
               "tsConfig": "projects/ui-kit/tsconfig.lib.json"
@@ -26,5 +26,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "86479628-28d5-4bb7-a0eb-c0e70969d328"
   }
 }
